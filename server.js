@@ -1,8 +1,8 @@
 require("dotenv").config();
 const express = require("express");
-const { connectDB } = require("./config/database");
+const { connectDB } = require("./src/config/database");
 
-const swiggyRestaurantRoutes = require("./routes/swiggyRestaurentRoutes");
+const swiggyRestaurantRoutes = require("./src/routes/swiggyRestaurentRoutes");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
